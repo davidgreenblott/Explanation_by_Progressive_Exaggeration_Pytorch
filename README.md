@@ -26,6 +26,11 @@ python train_classifier.py --config 'configs/celebA_DenseNet_Classifier.yaml'
 python train_classifier.py --config 'configs/celebA_Young_Classifier.yaml'
 ```
 
+2.b.1. To test a binary classifier on 1 attribute
+```
+python test_classifier.py --config 'configs/celebA_Young_Classifier.yaml'
+```
+
 3. Process the output of the classifier and create input for Explanation model by discretizing the posterior probability. 
    The input data for the Explanation model is saved at: $log_dir$/$name$/explainer_input/
 ```

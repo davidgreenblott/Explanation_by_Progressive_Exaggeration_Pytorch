@@ -71,10 +71,10 @@ class DataModule(pl.LightningModule):
                                                     append_to_path=append_to_path)
 
     def train_dataloader(self):
-        return DataLoader(self.train_dataset, self.batch_size, True, num_workers=32, drop_last=True)
+        return DataLoader(self.train_dataset, self.batch_size, True, num_workers=16, drop_last=True)
 
     def val_dataloader(self):
-        return DataLoader(self.val_dataset, self.batch_size, False, num_workers=32, drop_last=True)
+        return DataLoader(self.val_dataset, self.batch_size, False, num_workers=16, drop_last=True)
 
     @staticmethod
     def read_data_file(file_path, image_dir=''):
