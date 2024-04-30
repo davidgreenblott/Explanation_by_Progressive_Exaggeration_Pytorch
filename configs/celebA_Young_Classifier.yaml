@@ -13,5 +13,5 @@ num_channel: 3
 num_class: 1
 input_size: 128
 batch_size: 32
-epochs: 5
+epochs: 1
 ckpt_dir_continue: ''
